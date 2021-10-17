@@ -1,0 +1,109 @@
+﻿@viewModel Examp_DAS.ViewModels.MasterPageViewModel, Examp_DAS
+<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registros</title>
+
+    <style>
+
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 300;
+            src: url('fonts/quicksand-v13-latin-300.eot'); /* IE9 Compat Modes */
+            src: local(''), url('fonts/quicksand-v13-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/quicksand-v13-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/quicksand-v13-latin-300.woff') format('woff'), /* Modern Browsers */
+            url('fonts/quicksand-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/quicksand-v13-latin-300.svg#Quicksand') format('svg'); /* Legacy iOS */
+        }
+
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 400;
+            src: url('fonts/quicksand-v13-latin-regular.eot'); /* IE9 Compat Modes */
+            src: local(''), url('fonts/quicksand-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/quicksand-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/quicksand-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+            url('fonts/quicksand-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/quicksand-v13-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+        }
+        /* quicksand-500 - latin */
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 500;
+            src: url('fonts/quicksand-v13-latin-500.eot'); /* IE9 Compat Modes */
+            src: local(''), url('fonts/quicksand-v13-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/quicksand-v13-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/quicksand-v13-latin-500.woff') format('woff'), /* Modern Browsers */
+            url('fonts/quicksand-v13-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/quicksand-v13-latin-500.svg#Quicksand') format('svg'); /* Legacy iOS */
+        }
+        /* quicksand-600 - latin */
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 600;
+            src: url('fonts/quicksand-v13-latin-600.eot'); /* IE9 Compat Modes */
+            src: local(''), url('fonts/quicksand-v13-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/quicksand-v13-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/quicksand-v13-latin-600.woff') format('woff'), /* Modern Browsers */
+            url('fonts/quicksand-v13-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/quicksand-v13-latin-600.svg#Quicksand') format('svg'); /* Legacy iOS */
+        }
+        /* quicksand-700 - latin */
+        @font-face {
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 700;
+            src: url('fonts/quicksand-v13-latin-700.eot'); /* IE9 Compat Modes */
+            src: local(''), url('fonts/quicksand-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/quicksand-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/quicksand-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+            url('fonts/quicksand-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('fonts/quicksand-v13-latin-700.svg#Quicksand') format('svg'); /* Legacy iOS */
+        }
+
+        html {
+            font-family: "Quicksand";
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: rgba(0,0,0,0)
+        }
+
+        body {
+            margin: 0;
+            font-family: "Quicksand";
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #000000;
+            text-align: left;
+            background-color: #fff
+        }
+
+        h1 {
+            font-family: "Quicksand";
+            font-weight: 700;
+            color: #004C88;
+            font-size: 1.8em;
+            padding-top: 1em;
+        }
+
+        #form-control {
+            border: 1px solid #4a4d55;
+            font-size: 1.1em;
+        }
+    </style>
+
+</head>
+<body>
+    <dot:ContentPlaceHolder ID="MainContent" />
+</body>
+</html>

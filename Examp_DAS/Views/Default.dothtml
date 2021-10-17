@@ -1,0 +1,65 @@
+﻿@viewModel Examp_DAS.ViewModels.DefaultViewModel, Examp_DAS
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <h1 align="center">
+        <!--<img src="UserIcon.png" width="20%" height="20%" />-->
+        <br />
+        <b>{{value: Title}}</b>
+    </h1>
+
+    <div align="center">
+
+        <div Validator.Value="{value: Person.Username}"
+             Validator.InvalidCssClass="has-error"
+             Validator.SetToolTipText="true"
+             class="page-input-box">
+            <b>Nombre de usuario:</b>
+            <br />
+            <dot:TextBox Text="{value: Person.Username}" style="border: 1px solid #4a4d55; font-size: 1.1em;" />
+        </div>
+
+        <p />
+
+        <div Validator.Value="{value: Person.EnrollmentDate}"
+             Validator.InvalidCssClass="has-error"
+             Validator.SetToolTipText="true"
+             class="page-input-box">
+            <b>Fecha de nacimiento:</b>
+            <br />
+            <dot:TextBox Text="{value: Person.EnrollmentDate}"
+                         ValueType="DateTime"
+                         FormatString="dd/MM/yyyy"
+                         class="page-input"
+                         style="border: 1px solid #4a4d55; font-size: 1.1em;" />
+        </div>
+
+        <p />
+
+        <div Validator.Value="{value: Person.EnrollmentDate}"
+             Validator.InvalidCssClass="has-error"
+             Validator.SetToolTipText="true"
+             class="page-input-box">
+            <b>Genero:</b>
+            <br />
+            <dot:RadioButton id="Male" CheckedItem="{value: Person.Gender}" CheckedValue="5" style="border: 1px solid #4a4d55; font-size: 1.1em;" style="border: 1px solid #4a4d55; font-size: 1.1em;" />
+            <label for="Male">Hombre</label>
+            <dot:RadioButton id="Female" CheckedItem="{value: Person.Gender}" CheckedValue="4" style="border: 1px solid #4a4d55; font-size: 1.1em;" />
+            <label for="Female">Mujer</label>
+        </div>
+
+        <p />
+
+        <b>Sobre:</b>
+        <br />
+        <dot:TextBox Text="{value: Person.About}" Type="MultiLine" class="page-input" style="border: 1px solid #4a4d55; font-size: 1.1em;" />
+
+        <p />
+
+        <dot:Button Text="Registro" Click="{command: Process()}" class="page-button" style="background-color: #004C88; border: 2px solid ; color: #fff; font-weight: 600; padding-left: 2em; padding-right: 2em; font-size: 1rem;" />
+
+        <p />
+
+    </div>
+
+</dot:Content>
